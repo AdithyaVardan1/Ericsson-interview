@@ -1,0 +1,133 @@
+PS D:\Ericsson> python -u "d:\Ericsson\main.py"
+✅ All agent tools created successfully!
+Order Management Tools: 3
+Product Information Tools: 3
+Customer Database Tools: 3
+Weather Service Tools: 2
+✅ E-commerce Multi-Agent System created successfully!
+
+============================================================
+🔍 CUSTOMER QUERY: What's the status of order ORD002?
+============================================================
+🎯 Supervisor Decision: Route to order_management
+📦 Order Management Agent activated
+
+📋 ORDER_MANAGEMENT RESPONSE:
+The status of order *ORD002* is currently *PROCESSING*. The total amount for the order is $89.99, and it was placed on May 27, 2025. The order is shipping to 456 Oak Ave, Los Angeles, CA.
+
+You have the option to cancel this order, but it's not eligible for return at this time.
+🎯 Supervisor Decision: Route to FINISH
+
+============================================================
+✅ Query completed!
+============================================================
+
+
+============================================================
+🔍 CUSTOMER QUERY: Show me loyalty points for customer CUST001
+============================================================
+🎯 Supervisor Decision: Route to customer_service
+👤 Customer Service Agent activated
+
+📋 CUSTOMER_SERVICE RESPONSE:
+Customer John Smith has 1250 loyalty points and is in the Gold membership tier. He can redeem the following rewards:
+
+- $5 discount coupon for 500 points
+- $10 discount coupon for 1000 points
+🎯 Supervisor Decision: Route to FINISH
+
+============================================================
+✅ Query completed!
+============================================================
+
+
+============================================================
+🔍 CUSTOMER QUERY: What's the weather in Chicago and recommend suitable products
+============================================================
+🎯 Supervisor Decision: Route to weather_service
+🌤 Weather Service Agent activated
+
+📋 WEATHER_SERVICE RESPONSE:
+The current weather in Chicago is mild, with a temperature of 20°C, and a humidity level of 60%. There are no expected shipping impacts, and normal delivery times are anticipated.
+
+Here are some product recommendations suitable for the mild weather in Chicago:
+
+1. *Wireless Bluetooth Headphones* - $29.99
+   Perfect for mild weather! High-quality wireless headphones with noise cancellation.
+
+2. *Smart Fitness Watch* - $149.99
+   Advanced fitness tracking with a heart rate monitor, ideal for outdoor activities in mild weather.
+
+3. *Portable Phone Charger* - $89.99
+   A 20000mAh power bank, great for keeping your devices charged while on-the-go.
+
+4. *Hiking Boots* - $299.99
+   Durable with ankle support, these boots are perfect for hiking in moderate temperatures.
+
+5. *Yoga Mat* - $24.99
+   Non-slip yoga mat suitable for home workouts or outdoor sessions in mild weather.
+🎯 Supervisor Decision: Route to FINISH
+
+============================================================
+✅ Query completed!
+============================================================
+
+
+============================================================
+🔍 CUSTOMER QUERY: I'm customer CUST002, check weather in Los Angeles, find products I might like, and tell me about any orders I have
+============================================================
+🎯 Supervisor Decision: Route to weather_service
+🌤 Weather Service Agent activated
+
+📋 WEATHER_SERVICE RESPONSE:
+### Current Weather in Los Angeles
+- *Temperature:* 20°C
+- *Condition:* Mild
+- *Humidity:* 60%
+- *Shipping Impact:* Normal delivery times expected
+
+### Weather-Based Product Recommendations for Mild Weather in Los Angeles
+- *Wireless Bluetooth Headphones* - $29.99
+  - Perfect for mild weather! High-quality wireless headphones with noise cancellation.
+
+- *Smart Fitness Watch* - $149.99
+  - Advanced fitness tracking with heart rate monitor.
+
+- *Portable Phone Charger* - $89.99
+  - 20000mAh power bank with fast charging.
+
+- *Hiking Boots* - $299.99
+  - Durable hiking boots with ankle support.
+
+- *Yoga Mat* - $24.99
+  - Non-slip yoga mat for home workouts.
+
+### Order Status for Customer CUST002
+I'm unable to automatically retrieve your order information. Please check your account on our website or contact our customer service team for assistance with order details.
+🎯 Supervisor Decision: Route to order_management
+📦 Order Management Agent activated
+
+📋 ORDER_MANAGEMENT RESPONSE:
+It appears there are no orders associated with the ID *CUST002*. Please double-check your order ID or contact our customer support team for further assistance.    
+
+In the meantime, here's what I have for you:
+
+### Current Weather in Los Angeles
+- *Temperature:* 20°C
+- *Condition:* Mild
+
+### Weather-Based Product Recommendations
+- *Wireless Bluetooth Headphones* - $29.99
+- *Smart Fitness Watch* - $149.99
+- *Portable Phone Charger* - $89.99
+- *Hiking Boots* - $299.99
+- *Yoga Mat* - $24.99
+
+If you have any other requests or need further assistance, feel free to ask!
+🎯 Supervisor Decision: Route to FINISH
+
+============================================================
+✅ Query completed!
+============================================================
+
+PS D:\Ericsson>
