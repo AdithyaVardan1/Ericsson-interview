@@ -175,8 +175,3 @@ def test_system(query: str):
     print("✅ Query completed!")
     print(f"{'='*60}\n")
 
-if __name__ == "__main__":
-    test_system("What's the status of order ORD002?")
-    
-    
-    test_system("Show me loyalty points for customer CUST001")
